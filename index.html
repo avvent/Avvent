@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html>
+<head>
+<link rel="stylesheet" type="text/css" href="Libs/MainStyle.css">
+<link rel="stylesheet" type="text/css" href="Libs/bootstrap.min.css">
+<link rel="stylesheet" type="text/css" href="Libs/animate.min.css">
+
+
+<script src="Libs/jquery-3.2.1.min.js"></script>
+<script src="Libs/velocity.min.js"></script>
+<script src="Libs/hammer.min.js"></script>
+<script src="Libs/MainScrpt.js"></script>
+</head>
+
+
+<body>
+
+<div class="mobileOpenMenu" onclick="$('.mobileBar').show();">Menu</div>
+
+
+
+<div class="articleWindow animated slideInDown">
+	<div class="closeWindow" onclick="animWindow($(this) , 'slideInDown','slideOutDown');"></div>
+	<div id="articleContent" class="content"></div>
+</div>
+
+<div class="storyWindow animated slideInDown">
+	<div class="closeWindow" onclick="animWindow($(this) , 'slideInDown','slideOutDown');"></div>
+	<div id="storyContent" class="content"></div>
+</div>
+
+<div class="activityWindow animated fadeInRight">
+	<div class="closeWindow" onclick="animWindow($(this) ,'fadeInRight','fadeOutRight');"></div>
+	<div id="activityContent" class="content"></div>
+</div>
+
+
+<div class="sideBar">
+	<div class="title"><h1>Avvent</h1></div>
+	<div class="body"><hr/><br/><p>Create | Improve | Change</p><br/>
+	<div class="help">Help</div>
+	</div>
+
+	<br/><div class="title"><h2>Filter</h2></div>
+	<div class="controls"><hr/><br/>
+		<div class="propertyTitle"><h3>Type:</h3></div>
+			<div class="propertyBody">
+				<div id="article" class="propertyItem" onclick="filterWallType('article');">Article</div>
+				<div id="story" class="propertyItem" onclick="filterWallType('story');">Story</div>
+				<div id="activity" class="propertyItem" onclick="filterWallType('activity');">Activity</div>
+			</div>
+
+		<div class="propertyTitle"><h3>Project:</h3></div>
+			<div class="propertyBody">
+				<div id="nous" class="propertyItem" onclick="filterWallProject('nous');">Nous</div>
+				<div class="propertyItem"></div>
+				<div id="site" class="propertyItem" onclick="filterWallProject('site');">Site</div>
+			</div><
+	</div>
+
+	<br/><br/><div class="FAQ"><h3>FAQ</h3></div>
+</div>
+<div class="mobileBar">
+	<div class="closeButton" onclick="$('.mobileBar').hide();"></div>
+	<div class="title"><h1>Avvent</h1></div>
+	<div class="body"><hr/><br/><p>Create | Improve | Change</p><br/></div>
+
+	<br/><br/><div class="title"><h2>Filter</h2></div>
+	<div class="controls"><hr/><br/>
+		<div class="propertyTitle"><h3>Type:</h3></div>
+			<div class="propertyBody">
+				<div id="articleM" class="propertyItem" onclick="filterWallType('article');">Article</div>
+				<div id="storyM" class="propertyItem" onclick="filterWallType('story');">Story</div>
+				<div id="activityM" class="propertyItem" onclick="filterWallType('activity');">Activity</div>
+			</div>
+
+		<div class="propertyTitle"><h3>Project:</h3></div>
+			<div class="propertyBody">
+				<div id="nousM" class="propertyItem" onclick="filterWallProject('nous');">Nous</div>
+				<div class="propertyItem"></div>
+				<div id="siteM" class="propertyItem" onclick="filterWallProject('site');">Site</div>
+			</div>
+	</div>
+
+	<br/><br/><div class="FAQ"><h3>FAQ</h3></div>
+</div>
+
+<div class="wall"><hr/>
+	<div class="grid">
+		<div class="item article nous"><div class="item-content" onclick="clickArticle('WhatIsNous.txt')">The about of Project N</div></div>
+		<div class="item story site"><div class="item-content" onclick="clickStory('')">Coming Soon</div></div>
+		<div class="item activity site"><div class="item-content" onclick="clickActivity('')">Coming Soon</div></div>
+		<div class="item article site"><div class="item-content" onclick="clickArticle('1.txt')">What is an article?</div></div>
+	</div>
+</div>
+
+
+<script src="Libs/muuri.min.js"></script>
+<script src="Index/grid.js"></script>
+</body>
+
+
+
+
+
+</html>

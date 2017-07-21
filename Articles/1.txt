@@ -1,0 +1,10 @@
+<h2>
+
+What is an article?
+
+</h2><br/><hr/><br/>
+<p>
+
+It is simply an article. There is no media involved (video, audio, pictures). Just plain texts with links at the end if something needs to be proven with sources.
+
+</p>
